@@ -1,7 +1,41 @@
 # 笔记迁移中（wiz --> github）...
 
+说明：
+
+- 笔记内容来源于读书、开发实践总结、阅读他人博客、翻译等。
+- 笔记中的引用一般会标明出处并加上链接、如有纰漏，请联系我及时补充。
+- 笔记难免存在错误，如有发现，请帮我指出，不甚感激。
+
+如何解决问题?
+
+- 切忌焦躁，静心思考
+- 从日志找答案
+- Debug
+- 从源码分析
+- Google
+- StackOverflow
+
+如何学习 GitHub 项目?
+
+- 仔细阅读 README
+- 查看 Wiki
+- 查看 branch
+- 使用 Chrome 相关插件，高效使用 Github。
+
 ---
 ## Android
+
+### 基础组件
+
+- [Application](Android/基础组件/Application.md)
+- [Activity](Android/基础组件/Activity.md)
+- [Service](Android/基础组件/Service.md)  
+- [Intent](Android/基础组件/Intent.md)
+- [IntentFlag](Android/基础组件/IntentFlag.md)
+- [Notification](Android/基础组件/Notification.md)
+- [PendingIntent](Android/基础组件/PendingIntent.md)
+- [RemoteViews](Android/基础组件/RemoteViews.md)
+- [桌面Widget](Android/基础组件/桌面Widget.md)
 
 ### Fragment
 
@@ -23,8 +57,8 @@
 ---
 ## 计算机网络
 
-### 《图解加密技术》
+### 《图解密码技术》
 
-- [《图解加密技术》第一部分](计算机网络/网络通信基础/图解密码技术-part01.md)
+- [《图解密码技术》第一部分](计算机网络/网络通信基础/图解密码技术-part01.md)
 
 
