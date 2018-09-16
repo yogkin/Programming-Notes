@@ -71,6 +71,9 @@
 ### HTTP
 
 - [HTTP 概述](计算机网络/网络通信基础/HTTP_01_概述.md)
+- [HTTP 概述](计算机网络/网络通信基础/HTTP_02-Content-encoding_Transfer-Encoding.md)
+- [HTTP 概述](计算机网络/网络通信基础/HTTP_03_范围请求.md)
+
 
 ### HTTPS
 
