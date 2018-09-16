@@ -29,6 +29,8 @@
 
 - [Application](Android/基础组件/Application.md)
 - [Activity](Android/基础组件/Activity.md)
+    - [上次发版我就改了一行代码！](http://blog.csdn.net/eclipsexys/article/details/53791818)
+    - [利用 `<activity-alias>` 动态改变 App 桌面图标](http://yifeng.studio/2016/12/30/android-change-app-launcher-icon-dynamically/)
 - [Service](Android/基础组件/Service.md)  
 - [Intent](Android/基础组件/Intent.md)
 - [IntentFlag](Android/基础组件/IntentFlag.md)
@@ -36,11 +38,6 @@
 - [PendingIntent](Android/基础组件/PendingIntent.md)
 - [RemoteViews](Android/基础组件/RemoteViews.md)
 - [桌面Widget](Android/基础组件/桌面Widget.md)
-
-相关资料
-
-- [上次发版我就改了一行代码！](http://blog.csdn.net/eclipsexys/article/details/53791818)
-- [利用 `<activity-alias>` 动态改变 App 桌面图标](http://yifeng.studio/2016/12/30/android-change-app-launcher-icon-dynamically/)
 
 ### Fragment
 
