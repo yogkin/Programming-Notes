@@ -191,7 +191,7 @@ tabColor：
 
 drawable
 
-```
+```xml
     <selector xmlns:android="http://schemas.android.com/apk/res/android">
     
         <item android:drawable="@drawable/tab_follow_circle_select" android:state_selected="true"/>
