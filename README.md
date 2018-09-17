@@ -75,3 +75,32 @@
 ### HTTPS
 
 - [《HTTPS权威指南》-TLS/SSL](计算机网络/网络通信基础/HTTPS权威指南01-SSL&TLS.md)
+
+
+---
+## 编程语言
+
+
+### Groovy
+
+- [Groovy 学习资料](编程语言/Groovy/Groovy学习资料.md)
+- [Groovy 介绍](编程语言/Groovy/Groovy01-介绍.md)
+- [Groovy 入门](编程语言/Groovy/Groovy02-起步.md)
+- [面向 Java 开发者的 Groovy](编程语言/Groovy/Groovy03-面向Java开发者的Groovy.md)
+- [Groovy 动态类型](编程语言/Groovy/Groovy04-动态类型.md)
+- [Groovy 闭包](编程语言/Groovy/Groovy05-闭包.md)
+- [Groovy 字符串](编程语言/Groovy/Groovy06-字符串.md)
+- [Groovy 使用集合](编程语言/Groovy/Groovy07-使用集合.md)
+- [Groovy 探索GDK](编程语言/Groovy/Groovy08-探索GDK.md)
+- [Groovy 处理XML](编程语言/Groovy/Groovy09-XML.md)
+- [Groovy 数据库](编程语言/Groovy/Groovy10-数据库.md)
+- [Groovy 使用脚本和类](编程语言/Groovy/Groovy11-使用脚本和类.md)
+- [Groovy 探索元对象协议](编程语言/Groovy/Groovy12-探索元对象协议.md)
+- [Groovy 使用MOP拦截方法](编程语言/Groovy/Groovy13-使用MOP拦截方法.md)
+- [Groovy MOP方法注入](编程语言/Groovy/Groovy14-MOP方法注入.md)
+- [Groovy MOP方法合成](编程语言/Groovy/Groovy15-MOP方法合成.md)
+- [Groovy MOP技术汇总](编程语言/Groovy/Groovy16-MOP技术汇总.md)
+- [Groovy 应用编译时元编程](编程语言/Groovy/Groovy17-应用编译时元编程.md)
+- [Groovy 生成器](编程语言/Groovy/Groovy18-生成器.md)
+- [Groovy 单元测试与模拟](编程语言/Groovy/Groovy19-单元测试与模拟.md)
+- [在 Groovy 中创建 DSL](编程语言/Groovy/Groovy20-在Groovy中创建DSL.md)
