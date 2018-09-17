@@ -1,6 +1,6 @@
 # SSL 和 TLS
 
-所有连接到互联网的设备都有一个共同点，它们以来 **安全套接字（secure socket layer）** 和 **传输层安全（transport layer security）** 协议保护传输的信息。
+所有连接到互联网的设备都有一个共同点，它们依赖 **安全套接字（secure socket layer）** 和 **传输层安全（transport layer security）** 协议保护传输的信息。
 
 ---
 ## 1 传输层安全
