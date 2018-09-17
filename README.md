@@ -1,4 +1,6 @@
-# 笔记迁移中（wiz --> github）...
+# 编程笔记
+
+>wiz --> github，笔记还在迁移中......
 
 说明：
 
@@ -21,6 +23,7 @@
 - 查看 Wiki
 - 查看 branch
 - 使用 Chrome 相关插件，高效使用 Github。
+
 
 ---
 ## Android
@@ -57,13 +60,26 @@
 
 
 ---
+<<<<<<< HEAD
 ## 网络协议
+=======
+## 工具
+
+- [Git 常用命令](Tools/Git基础命令.md)
+- [AndroidStudio](Tools/Android.md)
+- [IDEA&AndroidStudio插件](Tools/IDEA&AndroidStudio插件.md)
+- [Windows 常用软件](Tools/Windows-Software-List.md)
+- [Windows 操作技巧](Tools/Windows-operating-skill.md)
+
+---
+## 计算机网络
+>>>>>>> 083db0c36bde484ffa74342bcc87078806dd66b8
 
 - **协议**：一系列相关协议的集合称为一个协议族的集合称为一个协议族，指定一个协议族的各种协议之间的相互关系并划分需要完成的任务的设计，称为协议族的体系结构或者参考模型。TCP/IP 是一个实现 Internet 体系结构的协议族。其来源于 ARPANET 参考模型。
 - **应用程序编程接口**：无论是 P2P 或是客户机/服务器，都需要表述其所需的网络操作(比如建立一个连接，写入或读取数据)，这通常由主机操作系统使用一个网络应用程序编程接口(API)来实现，最流行的编程接口被称为套接字( Socket )或者 Berkeley 套接字，它最初由 LJFK93 开发。可以说 TCP/IP 是规范。而 Socket 是其在编程上的实现。
 - [网络相关学习资料](计算机网络/网络通信基础/网络相关学习资料.md)
 
-### 《图解密码技术》
+### 图解密码技术
 
 - [《图解密码技术》第一部分](计算机网络/网络通信基础/图解密码技术-part01.md)
 
@@ -77,3 +93,103 @@
 ### HTTPS
 
 - [《HTTPS权威指南》-TLS/SSL](计算机网络/网络通信基础/HTTPS权威指南01-SSL&TLS.md)
+
+
+---
+## 编程语言
+
+### C语言
+
+学习资料：
+
+[C学习资料.md](编程语言/C/C学习资料.md)
+
+编译与构建：
+
+- [编译器-gcc学习.md](编程语言/C/编译器-gcc学习.md)
+- [构建工具-cmake简介.md](编程语言/C/构建工具-cmake简介.md)  
+- [构建工具-cmake学习.md](编程语言/C/构建工具-cmake学习.md)
+- [LLVM](https://llvm.org/) 项目是模块化和可重用的编译器和工具链技术的集合
+
+C 语言基础与提高：
+
+- [01-C语言简介.md](编程语言/C/01-C语言简介.md)
+- [02-C语言基础.md](编程语言/C/02-C语言基础.md)
+- [03-数据类型.md](编程语言/C/03-数据类型.md)
+- [04-sizeof和size_t类型.md](编程语言/C/04-sizeof和size_t类型.md)
+- [05-数组.md](编程语言/C/05-数组.md)
+- [06-函数.md](编程语言/C/06-函数.md)
+- [07-存储类别.md](编程语言/C/07-存储类别.md)
+- [08-字符串.md](编程语言/C/08-字符串.md)
+- [09-左值与右值.md](编程语言/C/09-左值与右值.md)
+- [10-指针.md](编程语言/C/10-指针.md)
+- [11-指针的大小.md](编程语言/C/11-指针的大小.md)
+- [12-输入和输出.md](编程语言/C/12-输入和输出.md)
+- [13-预处理.md](编程语言/C/13-预处理.md)
+- [14-头文件.md](编程语言/C/14-头文件.md)
+- [15-typedef.md](编程语言/C/15-typedef.md)
+- [16-结构体-枚举-联合体.md](编程语言/C/16-结构体-枚举-联合体.md)
+- [17-字节对齐与内存分配.md](编程语言/C/17-字节对齐与内存分配.md)
+- [20-文件读写.md](编程语言/C/20-文件读写.md)
+- [21-错误处理.md](编程语言/C/21-错误处理.md)
+- [22-动态内存管理.md](编程语言/C/22-动态内存管理.md)
+- [23-C语言标准库.md](编程语言/C/23-C语言标准库.md)
+- [24-C语言内存四区.md](编程语言/C/24-C语言内存四区.md)
+- [25-C 提高](编程语言/C/25-C提高.md)
+- [25-C 提高练习](编程语言/C/25-C提高练习.md)
+
+### Kotlin
+
+学习资料：
+
+- [Kotlin 学习资料](编程语言/Kotlin/Kotlin学习资料.md)
+
+Kotlin 基础：
+
+- [Kotlin 基础语法](编程语言/Kotlin/Kotlin01-基础语法.md)
+- [Kotlin 面向对象](编程语言/Kotlin/Kotlin02-面向对象.md)
+- [Kotlin 函数与扩展](编程语言/Kotlin/Kotlin03-函数与扩展.md)
+- [Kotlin Lambda编程](编程语言/Kotlin/Kotlin04-Lambda编程.md)
+- [Kotlin 类型系统](编程语言/Kotlin/Kotlin05-类型系统.md)
+- [Kotlin 运算符重载](编程语言/Kotlin/Kotlin06-运算符重载.md)
+- [Kotlin 委托](编程语言/Kotlin/Kotlin07-委托.md)
+- [Kotlin 泛型](编程语言/Kotlin/Kotlin08-泛型.md)
+- [Kotlin 与 Java 互操作](编程语言/Kotlin/Kotlin09-与Java互操作.md)
+- [Kotlin 反射](编程语言/Kotlin/Kotlin10-反射.md)
+- [Kotlin API 总结](编程语言/Kotlin/Kotlin-API总结.md)
+
+Kotlin Android：
+
+- [Kotlin Android 开发实践](编程语言/Kotlin/Kotlin-Android-开发实践.md)
+- [Kotlin Android 避坑](编程语言/Kotlin/Kotlin-Android-避坑.md)
+
+Kotlin 协程：
+
+- [Kotlin 协程概述](编程语言/Kotlin/KotlinCoroutine01-概述.md)
+- [Kotlin Guide](编程语言/Kotlin/KotlinCoroutine02-Guide.md)
+- [Kotlin 协程总结](编程语言/Kotlin/KotlinCoroutine03-总结.md)
+- [Kotlin 协程实践](编程语言/Kotlin/KotlinCoroutine04-实践.md)
+
+### Groovy
+
+- [Groovy 学习资料](编程语言/Groovy/Groovy学习资料.md)
+- [Groovy 介绍](编程语言/Groovy/Groovy01-介绍.md)
+- [Groovy 入门](编程语言/Groovy/Groovy02-起步.md)
+- [面向 Java 开发者的 Groovy](编程语言/Groovy/Groovy03-面向Java开发者的Groovy.md)
+- [Groovy 动态类型](编程语言/Groovy/Groovy04-动态类型.md)
+- [Groovy 闭包](编程语言/Groovy/Groovy05-闭包.md)
+- [Groovy 字符串](编程语言/Groovy/Groovy06-字符串.md)
+- [Groovy 使用集合](编程语言/Groovy/Groovy07-使用集合.md)
+- [Groovy 探索GDK](编程语言/Groovy/Groovy08-探索GDK.md)
+- [Groovy 处理XML](编程语言/Groovy/Groovy09-XML.md)
+- [Groovy 数据库](编程语言/Groovy/Groovy10-数据库.md)
+- [Groovy 使用脚本和类](编程语言/Groovy/Groovy11-使用脚本和类.md)
+- [Groovy 探索元对象协议](编程语言/Groovy/Groovy12-探索元对象协议.md)
+- [Groovy 使用MOP拦截方法](编程语言/Groovy/Groovy13-使用MOP拦截方法.md)
+- [Groovy MOP方法注入](编程语言/Groovy/Groovy14-MOP方法注入.md)
+- [Groovy MOP方法合成](编程语言/Groovy/Groovy15-MOP方法合成.md)
+- [Groovy MOP技术汇总](编程语言/Groovy/Groovy16-MOP技术汇总.md)
+- [Groovy 应用编译时元编程](编程语言/Groovy/Groovy17-应用编译时元编程.md)
+- [Groovy 生成器](编程语言/Groovy/Groovy18-生成器.md)
+- [Groovy 单元测试与模拟](编程语言/Groovy/Groovy19-单元测试与模拟.md)
+- [在 Groovy 中创建 DSL](编程语言/Groovy/Groovy20-在Groovy中创建DSL.md)
