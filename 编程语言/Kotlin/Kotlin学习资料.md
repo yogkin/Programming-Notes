@@ -44,6 +44,7 @@ kotlin 发展简史：
 - [Kotlin on Android FAQ](https://developer.android.com/kotlin/faq.html)
 - [官方：anko库](https://github.com/Kotlin/anko)
 - [kovenant](http://kovenant.komponents.nl/)：Kotlin的简单异步库
+- [Kotlin Android Extensions: Say goodbye to findViewById](https://antonioleiva.com/kotlin-android-extensions/)
 
 ---
 ## 3 项目
