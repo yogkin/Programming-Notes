@@ -22,6 +22,7 @@
 - 查看 branch
 - 使用 Chrome 相关插件，高效使用 Github。
 
+
 ---
 ## Android
 
@@ -55,6 +56,13 @@
 - [11-XMl 中使用 Fragment](Android/Fragment/11-在xml中使用Fragment.md)
 - [100-Fragment相关问题记录](Android/Fragment/100-Fragment相关问题记录.md)
 
+
+---
+## Tools
+
+- [Git 常用命令](Tools/Git基础命令.md)
+- [AndroidStudio](Tools/Android.md)
+- [IDEA&AndroidStudio插件](Tools/IDEA&AndroidStudio插件.md)
 
 ---
 ## 计算机网络
