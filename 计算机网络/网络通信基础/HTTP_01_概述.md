@@ -26,7 +26,7 @@ http协议的主要特点：
 
 >比如：在一个HTML页面中如果包含<img>标记的话，当浏览器解析到这些标记时，还会向服务器请求访问标记中指定的文件，即再次建立连接并发出HTTP请求。
 
-![](images/http_summary_02.jpg)
+![](images/http_summary_03.png)
 
 
 2，浏览器到WEB服务器之间的所有通讯都是完全独立分开的请求和响应
@@ -41,7 +41,7 @@ Http1.1是基于http1.0改进的协议，有如下特点：
 2，多个请求和响应过程可以重叠
 3，增加了更多的请求方式，以及请求头和响应头，比如Host、If-Unmodified-Since请求头等
 
-![](images/http_summary_03.png)
+![](images/http_summary_02.jpg)
 
 
 ### 2.3 Http2.0
