@@ -97,6 +97,43 @@
 - [《HTTPS权威指南》-密码学简介](计算机网络/网络通信基础/HTTPS权威指南02-密码学简介.md)
 
 ---
+## 工程构建
+
+### Gradle
+
+学习资料：
+
+- [Gradle学习资料](工程构建/Gradle/Gradle学习资料.md)
+
+Gradle Android：
+
+- [Android-Gradle 实践记录](工程构建/Gradle/Android-Gradle实践记录.md)
+- [Android-TransformAPI](工程构建/Gradle/Android-TransformAPI.md)
+- [Android-解决重复依赖的冲突](工程构建/Gradle/Android-解决重复依赖的冲突.md)
+- [Gradle-Windows 平台修改缓存位置](工程构建/Gradle/Gradle-Windows平台修改缓存位置.md)
+- [Android-《GradleForAndroid》 笔记](工程构建/Gradle/Android-GradleForAndroid.md)
+- [CI-Nexus 仓库](工程构建/Gradle/CI-Nexus仓库.md)
+
+Gradle 实战：
+
+- [Gradle实战-00-概述](工程构建/Gradle/Gradle实战-00-概述.md)
+- [Gradle实战-01-项目自动化介绍](工程构建/Gradle/Gradle实战-01-项目自动化介绍)
+- [Gradle实战-02-Gradle基础](工程构建/Gradle/Gradle实战-02-Gradle基础.md)
+- [Gradle实战-03-构建java项目](工程构建/Gradle/Gradle实战-03-构建java项目.md)
+- [Gradle实战-04-构建web项目](工程构建/Gradle/Gradle实战-04-构建web项目.md)
+- [Gradle实战-05-GradleWrapper](工程构建/Gradle/Gradle实战-05-GradleWrapper.md)
+- [Gradle实战-06-Gradle构建脚本概要-1-Project](工程构建/Gradle/Gradle实战-06-Gradle构建脚本概要-1-Project.md)
+- [Gradle实战-07-Gradle构建脚本概要-2-Task](工程构建/Gradle/Gradle实战-07-Gradle构建脚本概要-2-Task.md)
+- [Gradle实战-08-Gradle依赖管理](工程构建/Gradle/Gradle实战-08-Gradle依赖管理.md)
+- [Gradle实战-09-扩展Gradle](工程构建/Gradle/Gradle实战-09-扩展Gradle.md)
+- [Gradle实战-10-Gradle命令行](工程构建/Gradle/Gradle实战-10-Gradle命令行.md)
+
+### Maven
+
+- [Maven 入门](工程构建/Maven/01-Maven入门.md)
+
+
+---
 ## 编程语言
 
 ### C语言
