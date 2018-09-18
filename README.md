@@ -212,3 +212,31 @@ Kotlin 协程：
 - [19-关联容器.md](编程语言/CPP/19-关联容器.md)
 - [20-模板.md](编程语言/CPP/20-模板.md)
 - [21-stl综合.md](编程语言/CPP/21-stl综合.md)
+
+### Python
+
+学习资料：
+
+- [Python学习资料](编程语言/Python/Python学习资料.md)
+- [Python2&Python3.md](编程语言/Python/Python2.md)
+- [Python标准库.md](编程语言/Python/Python标准库.md)
+
+Python3基础：
+
+- [01-Python 简介.md](编程语言/Python/01-Python简介.md)
+- [02-基础语法.md](编程语言/Python/02-基础语法.md)
+- [03-字符串.md](编程语言/Python/03-字符串.md)
+- [04-容器.md](编程语言/Python/04-容器.md)
+- [05-运算符与表达式.md](编程语言/Python/05-运算符与表达式.md)
+- [06-包与模块.md](编程语言/Python/06-包与模块.md)
+- [07-函数.md](编程语言/Python/07-函数.md)
+- [08-面向对象.md](编程语言/Python/08-面向对象.md)
+- [09-正则表达式.md](编程语言/Python/09-正则表达式.md)
+- [10-函数式编程与装饰器.md](编程语言/Python/10-函数式编程与装饰器.md)
+- [11-文件操作.md](编程语言/Python/11-文件操作.md)
+- [12-输入输出.md](编程语言/Python/12-输入输出.md)
+- [13-高级部分.md](编程语言/Python/13-高级部分.md)
+- [15-调试PDB.md](编程语言/Python/15-调试PDB.md)
+- [16-进程.md](编程语言/Python/16-进程.md)
+- [17-多线程.md](编程语言/Python/17-多线程.md)
+- [18-网络通信.md](编程语言/Python/18-网络通信.md)
