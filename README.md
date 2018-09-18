@@ -136,6 +136,10 @@ Gradle 实战：
 ---
 ## 编程语言
 
+### Java
+
+- [Java核心技术36讲](编程语言/Java/Java核心技术36讲/Java核心技术36讲重点记录.md)，推荐订阅该[专栏](https://time.geekbang.org/column/intro/82)
+
 ### C语言
 
 学习资料：
