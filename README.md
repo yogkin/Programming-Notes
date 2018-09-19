@@ -41,17 +41,17 @@
 
 ### 基础组件
 
-- [Application](Android/基础组件/Application.md)
-- [Activity](Android/基础组件/Activity.md)
+- [Application](Android/Basic/Application.md)
+- [Activity](Android/Basic/Activity.md)
     - [上次发版我就改了一行代码！](http://blog.csdn.net/eclipsexys/article/details/53791818)
     - [利用 `<activity-alias>` 动态改变 App 桌面图标](http://yifeng.studio/2016/12/30/android-change-app-launcher-icon-dynamically/)
-- [Service](Android/基础组件/Service.md)  
-- [Intent](Android/基础组件/Intent.md)
-- [IntentFlag](Android/基础组件/IntentFlag.md)
-- [Notification](Android/基础组件/Notification.md)
-- [PendingIntent](Android/基础组件/PendingIntent.md)
-- [RemoteViews](Android/基础组件/RemoteViews.md)
-- [桌面Widget](Android/基础组件/桌面Widget.md)
+- [Service](Android/Basic/Service.md)  
+- [Intent](Android/Basic/Intent.md)
+- [IntentFlag](Android/Basic/IntentFlag.md)
+- [Notification](Android/Basic/Notification.md)
+- [PendingIntent](Android/Basic/PendingIntent.md)
+- [RemoteViews](Android/Basic/RemoteViews.md)
+- [桌面Widget](Android/Basic/桌面Widget.md)
 
 ### Fragment
 
@@ -80,6 +80,10 @@
 - [01-NDK开发介绍](Android/NDK/01-NDK开发介绍.md)
 - [02-ndkbuild](Android/NDK/02-ndkbuild.md)
 - [03-cmake](Android/NDK/03-cmake.md)
+
+### 优化
+
+- [性能优化](Android/Optimization/Performance.md)
 
 ---
 ---
