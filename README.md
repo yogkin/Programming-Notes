@@ -42,9 +42,7 @@
 ### 基础组件
 
 - [Application](Android/Basic/Application.md)
-- [Activity](Android/Basic/Activity.md)
-    - [上次发版我就改了一行代码！](http://blog.csdn.net/eclipsexys/article/details/53791818)
-    - [利用 `<activity-alias>` 动态改变 App 桌面图标](http://yifeng.studio/2016/12/30/android-change-app-launcher-icon-dynamically/)
+- [Activity](Android/Basic/Activity.md)  
 - [Service](Android/Basic/Service.md)  
 - [Intent](Android/Basic/Intent.md)
 - [IntentFlag](Android/Basic/IntentFlag.md)
