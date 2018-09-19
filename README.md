@@ -36,6 +36,8 @@
 ---
 ## Android
 
+- [Android 开发常规技能总结](Android/README.md)
+
 ### 基础组件
 
 - [Application](Android/基础组件/Application.md)
