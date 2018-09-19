@@ -66,6 +66,19 @@
 - [11-XMl 中使用 Fragment](Android/Fragment/11-在xml中使用Fragment.md)
 - [100-Fragment相关问题记录](Android/Fragment/100-Fragment相关问题记录.md)
 
+### 开源框架
+
+- [Dagger 2 使用指南](Android/Libraries/Dagger2-使用指南.md)
+- [okio 简介](Android/Libraries/okio-简介.md)
+- [okio wiki](Android/Libraries/okio-wiki.md)
+
+### NDK
+
+- [01-NDK开发介绍](Android/NDK/01-NDK开发介绍.md)
+- [02-ndkbuild](Android/NDK/02-ndkbuild.md)
+- [03-cmake](Android/NDK/03-cmake.md)
+
+---
 ## 工具
 
 - [Git 常用命令](Tools/Git基础命令.md)
