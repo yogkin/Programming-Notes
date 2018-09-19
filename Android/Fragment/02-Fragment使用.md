@@ -3,7 +3,7 @@
 **内存重启**：指 Activity 在后台因内存不足被回收，当重新回到 Activity 时，系统会重新创建 Activity 与 Activity 中的 fragments，利用屏幕旋转可以模拟这种情况。
 
 ---
-## 1 Fragment的方式
+## 1 Fragment的操作方式
 
 Fragment的需要通过 FragmentTransaction 来操作，主要的操作方法如下：
 
@@ -155,4 +155,4 @@ public static WeatherFragment newInstance(String cityName) {
 }
 ```
 
-- 避免错误操作导致 Fragment 的视图重叠，前面已经提到
+- 避免错误操作导致 Fragment 的视图重叠，前面已经提到。
