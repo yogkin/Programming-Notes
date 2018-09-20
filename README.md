@@ -69,7 +69,7 @@
 
 ### 开源框架
 
-- [Dagger 2 使用指南](Android/Libraries/Dagger2-使用指南.md)
+- [Dagger2 使用指南](Android/Libraries/Dagger2-使用指南.md)
 - [okio 简介](Android/Libraries/okio-简介.md)
 - [okio wiki](Android/Libraries/okio-wiki.md)
 
@@ -99,23 +99,23 @@
 
 - **协议**：一系列相关协议的集合称为一个协议族的集合称为一个协议族，指定一个协议族的各种协议之间的相互关系并划分需要完成的任务的设计，称为协议族的体系结构或者参考模型。TCP/IP 是一个实现 Internet 体系结构的协议族。其来源于 ARPANET 参考模型。
 - **应用程序编程接口**：无论是 P2P 或是客户机/服务器，都需要表述其所需的网络操作(比如建立一个连接，写入或读取数据)，这通常由主机操作系统使用一个网络应用程序编程接口(API)来实现，最流行的编程接口被称为套接字( Socket )或者 Berkeley 套接字，它最初由 LJFK93 开发。可以说 TCP/IP 是规范。而 Socket 是其在编程上的实现。
-- [网络相关学习资料](Network/网络通信基础/网络相关学习资料.md)
+- [网络相关学习资料](Network/ProtocolBasic/网络相关学习资料.md)
 
 ### 图解密码技术
 
-- [《图解密码技术》第一部分](Network/网络通信基础/图解密码技术-part01.md)
+- [《图解密码技术》第一部分](Network/ProtocolBasic/图解密码技术-part01.md)
 
 ### HTTP
 
-- [HTTP 概述](Network/网络通信基础/HTTP_01_概述.md)
-- [HTTP Content encoding 和 Transfer Encoding](Network/网络通信基础/HTTP_02_Content_encoding_Transfer_Encoding.md)
-- [HTTP 范围请求](Network/网络通信基础/HTTP_03_范围请求.md)
+- [HTTP 概述](Network/ProtocolBasic/HTTP_01_概述.md)
+- [HTTP Content encoding 和 Transfer Encoding](Network/ProtocolBasic/HTTP_02_Content_encoding_Transfer_Encoding.md)
+- [HTTP 范围请求](Network/ProtocolBasic/HTTP_03_范围请求.md)
 
 
 ### HTTPS
 
-- [《HTTPS权威指南》-TLS/SSL](Network/网络通信基础/HTTPS权威指南01-SSL&TLS.md)
-- [《HTTPS权威指南》-密码学简介](Network/网络通信基础/HTTPS权威指南02-密码学简介.md)
+- [《HTTPS权威指南》-TLS/SSL](Network/ProtocolBasic/HTTPS权威指南01-SSL&TLS.md)
+- [《HTTPS权威指南》-密码学简介](Network/ProtocolBasic/HTTPS权威指南02-密码学简介.md)
 
 ---
 ---
