@@ -90,7 +90,7 @@
 
 参考下面图示清晰地描述了签名和验证的过程：
 
-![](images/digital_signature.png)
+![](images/Digital_Signature_diagram.png)
 >图片来自维基百科，需要明确的一点是，私钥加密的数据，只有加密方提供的对应公钥才能解密，这就提供了通信过程的不可否认性。
 
 
