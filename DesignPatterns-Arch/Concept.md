@@ -18,7 +18,7 @@ AOP 的初衷在于软件设计世界中存在这么一类代码，**零散而�
 
 - [ ] todo
 
-##有限状态机FSM(Finite State Machine)
+## 有限状态机FSM(Finite State Machine)
 
 软件上常用的一种处理方法它把复杂的控制逻辑分解成有限个稳定状态，在每个状态上判断事件，变连续处理为离散数字处理，符合计算机的工作特点。发生事件(event)后，根据当前状态(cur_state)，决定执行的动作(action)，并设置下一个状态号(nxt_state)。
 
