@@ -51,7 +51,7 @@ JavaScript核心内容包括
 
 示例：
 
-```
+```javascript
 //return、break、continue后面不能换行
     return
     true
@@ -340,8 +340,8 @@ console.log(t);//打印结果为undefined
 
 JavaScript隐式的类型转换与操作的数据类型和操作符都有关系：
 
-值|转换为：字符串|转换为：数组|转换为：布尔值|转换为：对象
----|---|---|---|---|---
+值 | 转换为：字符串 | 转换为：数组 | 转换为：布尔值 | 转换为：对象
+---|---|---|---|---
 undefined<br/>null|"undefined"<br/>"null"|NaN<br/>0|false<br/>false<br/>|throws TypeError<br/>同上
 true<br/>false|"true"<br/>"false"|1<br/>0| |new Boolean(true)<br/>new Boolean(fale)
 ""(空字符串)<br/>"1.2"<br/>"one"| |0<br/>1.2<br/>NaN|false<br/>true<br/>true|new String("")<br/>new String("1.2")<br/>new String("one")
