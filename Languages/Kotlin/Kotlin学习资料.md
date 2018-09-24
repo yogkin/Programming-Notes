@@ -31,6 +31,7 @@ kotlin 发展简史：
 - [官方：Kotlin协程](https://github.com/Kotlin/kotlinx.coroutines)
 - [官方：kotlin-examples](https://github.com/JetBrains/kotlin-examples)
 - [Kotlin 中文站](https://www.kotlincn.net/)
+- [Ktor 中文站](https://ktor.kotlincn.net/)
 - [kymjs：Kotlin Primer](https://kymjs.com/code/2017/02/03/01/)
 - [EasyKotlin](https://github.com/JackChan1999/EasyKotlin)
 - [EasyKotlin-All](https://github.com/EasyKotlin)
@@ -78,8 +79,10 @@ kotlin 发展简史：
 - [coroutine-recipes 协程风格代码](https://github.com/dmytrodanylyk/coroutine-recipes)
 
 ---
-## 5 BennyHuo Kotlin 中国布道者
+## 5 BennyHuo Kotlin
 
 - [BennyHuo github](https://github.com/enbandari)
 - [Kotlin 系统入门到进阶 视频教程](http://coding.imooc.com/class/108.html)
 - [基于 GitHub App 业务深度讲解 Kotlin1.2高级特性与框架设计](https://coding.imooc.com/class/232.html)
+- [来看看 Kotlin 1.3-M2 都有哪些好玩的东西](https://mp.weixin.qq.com/s?__biz=MzIzMTYzOTYzNA==&mid=2247484229&idx=1&sn=39328734a73ce7033f017fdc9b0dd3a8&chksm=e8a05c78dfd7d56ebdbdce91ba8291f3678de02e522dc6f47118e01cce5335e0593c68441cf0&mpshare=1&scene=1&srcid=0917x8zBcvTHH1gFHLsD6HEI#rd)
+- [Kotlin 1.3 RC 来啦：快迁移您的协程代码吧！](https://mp.weixin.qq.com/s/tYkPr6dKJA0HEAlSZ0CLkg)

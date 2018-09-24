@@ -110,7 +110,9 @@
 - [HTTP 概述](Network/ProtocolBasic/HTTP_01_概述.md)
 - [HTTP Content encoding 和 Transfer Encoding](Network/ProtocolBasic/HTTP_02_Content_encoding_Transfer_Encoding.md)
 - [HTTP 范围请求](Network/ProtocolBasic/HTTP_03_范围请求.md)
-
+- [HTTP URL&URI](Network/ProtocolBasic/HTTP_04_URL&URI.md)
+- [HTTP 缓存](Network/ProtocolBasic/HTTP_05_缓存.md)
+- [HTTP 客户端识别与 Cookie](Network/ProtocolBasic/HTTP_06_客户端识别与Cookie.md)
 
 ### HTTPS
 

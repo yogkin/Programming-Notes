@@ -4,6 +4,7 @@
 - [HTTP / HTTP 2 专题](https://imququ.com/post/series.html)
 - [实用 HTTP 专题](https://www.cnblogs.com/plokmju/tag/http/)
 - [MDN-HTTP 专题](https://developer.mozilla.org/zh-CN/docs/Web/HTTP)
+- [简单聊聊 GZIP 的压缩原理与日常应用](https://juejin.im/post/5b793126f265da43351d5125)
 
 ##  思科 PacketTracer 教程
 
@@ -18,7 +19,6 @@
 - 《TCP/IP 详解》
 - 《Http 权威指南》
 - 《Https 权威指南》
-    -  [bulletproof-tls](https://github.com/ivanr/bulletproof-tls)
 -  [《openssl攻略》](http://www.ituring.com.cn/book/download/338e1e55-fd94-4ac3-9e21-e0bf04984b3f)
 - 《深入浅出 Https》
 

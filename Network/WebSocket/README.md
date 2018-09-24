@@ -7,7 +7,7 @@ WebSocket 协议在2008年诞生，2011年成为国际标准。所有浏览器�
 
 ### 与 Http 的区别
 
-已经有了 HTTP 协议，为什么还需要另一个协议？它能带来什么好处？因为 HTTP 协议有一个缺陷：**通信只能由客户端发起**。这种单向请求的特点，注定了如果服务器有连续的状态变化，客户端要获知就非常麻烦。我们只能使用**轮询**，每隔一段时候，就发出一个询问，了解服务器有没有新的信息。轮询的效率低，非常浪费资源，WebSocket的出现就是用于解决这个问题的。
+已经有了 HTTP 协议，为什么还需要另一个协议？它能带来什么好处？因为 HTTP 协议有一个缺陷：**通信只能由客户端发起**。这种单向请求的特点，注定了如果服务器有连续的状态变化，客户端要获知就非常麻烦。我们只能使用 **轮询**，每隔一段时候，就发出一个询问，了解服务器有没有新的信息。轮询的效率低，非常浪费资源，WebSocket的出现就是用于解决这个问题的。
 
 WebSocket协议是一种建立在TCP连接基础上的全双工通信的协议。建立在TCP的基础上，是一个**全双工通信**(客户端和服务端可以同时进行双向通信)协议
 
@@ -33,6 +33,7 @@ WebSocket协议是一种建立在TCP连接基础上的全双工通信的协议�
 - [AndroidAsyn](https://github.com/koush/AndroidAsync)：Android端Socket封装，支持WebSocket
 - [autobahn-java](https://github.com/crossbario/autobahn-java)：Android和Java8的WebSocket、WAMP`(Web Application Messaging Protocol`)支持
 - [java-webSocket](https://github.com/TooTallNate/Java-WebSocket)
+- [Scarlet](https://github.com/Tinder/Scarlet)
 
 ---
 ## 引用
