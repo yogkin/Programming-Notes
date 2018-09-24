@@ -1,5 +1,7 @@
 # TLS 协议
 
+>理论需要靠实践来验证，所以在了解 TLS 协议时可以使用 wireshark 抓包来验证所学的知识。
+
 ---
 ## 1 记录协议
 
@@ -28,9 +30,9 @@ TLS 的主规格说明书定义了四个核心子协议：
 
 握手是 TLS 协议中最精密复杂的部分。在这个过程中，通信双方协商连接参数，并且完成身份验证。根据使用的功能不同，整个过程需要交换 6-10 条消息，根据配置和支持的协议扩展的不同，交换过程可能有多种变种，在使用中经常可以观察到以下三种流程：
 
-1. 完整的握手：对服务器身份进行验证。
-2. 回复之前的会话采用的简短握手。
-3. 对客户端和服务器都进行身份验证。
+1. 完整的握手：对服务器身份进行验证。即通常的单向认证。
+2. 恢复之前的会话采用的简短握手。
+3. 对客户端和服务器都进行身份验证。即双向认证。
 
 ### 完整的握手（单向验证）
 
@@ -41,32 +43,30 @@ TLS 的主规格说明书定义了四个核心子协议：
 - 对将用于保护的会话的共享主密钥达成一致。（协商对称加密的密钥）
 - 验证握手消息并未被第三方团队修改。
 
->在实际使用中，第 2 步和第 3 步都是密钥交换（更通用的说法是密钥生成）的一部分， 密钥交换是一个单独的步骤。作者更倾向于将它们分开来说，用以强调 **协议的安全性取决于正确的身份验证**。身份验证有效地在 TLS 的外层工作。如果没有身份验证，主动攻 击者就可以将自身嵌入会话，并冒充会话的另一端。 
+>在实际使用中，第 2 步和第 3 步都是密钥交换（更通用的说法是密钥生成）的一部分， 密钥交换是一个单独的步骤。作者更倾向于将它们分开来说，用以强调 **协议的安全性取决于正确的身份验证**。身份验证有效地在 TLS 的外层工作。如果没有身份验证，主动攻击者就可以将自身嵌入会话，并冒充会话的另一端。 
 
 常见的TLS握手流程，就是一种在不需要身份验证的客户端与需要身份验证的 服务器之间的握手，如下图所示：
 
 ![](images/tls_full_handshake.png)
 
-对服务器进行身份验证的完整握手，10 个步骤描述如下：
+对服务器进行身份验证的完整握手：
 
-1. 客户端开始新的握手，并将自身支持的功能提交给服务器。
+1. 客户端开始新的握手，并将自身支持的功能提交给服务器。（参数协商）
 2. 服务器选择连接参数。
-3. 服务器发送其证书链（仅当需要服务器身份验证时）。
+3. 服务器发送其证书链（仅当需要服务器身份验证时）。（验证身份）
 4. 根据选择的密钥交换方式，服务器发送生成主密钥的额外信息。
 5. 服务器通知自己完成了协商过程。
 6. 客户端发送生成主密钥所需要的额外信息。
 7. 客户端切换加密方式并通知服务器。（接下来客户端发的信息都要加密了）
-8. 客户端计算发送和接受到的握手消息的 MAC 并发送。
+8. 客户端计算`发送和接受到的握手消息的 MAC`并发送。
 9. 服务器切换到加密方式并通知客户端。（接下来服务器发的信息都要加密了）
-10. 服务器计算发送和接受到的握手消息的 MAC 并发送。
+10. 服务器计算`发送和接受到的握手消息的 MAC`并发送。
 
->第1、2步Hello消息是用来协商取得连接，3-6步是用来验证身份和交换密钥，最后8和10步需要MAC是用来验证握手消息没被第三方修改。
-
-假设没有错误，到最后一步，练级就建立起来了，可以开始发送应用数据了。具体握手细节如下：
+假设没有错误，到最后一步，练级就建立起来了，可以开始发送应用数据了。具体细节如下：
 
 #### (1) ClientHello 
 
-- 在一次新的握手流程中，ClientHello消息总是第一条消息。这条消息将客户端的功能和首选项传送给服务器。
+- 在一次新的握手流程中，ClientHello 消息总是第一条消息。这条消息将客户端的功能和首选项传送给服务器。
 - 客户端会在新建连接后，希望重新协商或者响应服务器发起的重新协商请求 （由HelloRequest消息指示）时，发送这条消息。 
 
 一条被简化的 ClientHello 消息内容如下：
@@ -74,47 +74,47 @@ TLS 的主规格说明书定义了四个核心子协议：
 ```
 Handshake protocol: ClientHello     
     Version: TLS 1.2     
-    Random         
+    Random      
         Client time: May 22, 2030 02:43:46 GMT         
         Random bytes: b76b0e61829557eb4c611adfd2d36eb232dc1332fe29802e321ee871     
-        Session ID: (empty)     
-        Cipher Suites         
-            Suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256         
-            Suite: TLS_DHE_RSA_WITH_AES_128_GCM_SHA256         
-            Suite: TLS_RSA_WITH_AES_128_GCM_SHA256         
-            Suite: TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA         
-            Suite: TLS_DHE_RSA_WITH_AES_128_CBC_SHA         
-            Suite: TLS_RSA_WITH_AES_128_CBC_SHA         
-            Suite: TLS_RSA_WITH_3DES_EDE_CBC_SHA         
-            Suite: TLS_RSA_WITH_RC4_128_SHA     
-        Compression methods         
+    Session ID: (empty)     
+    Cipher Suites         
+        Suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256         
+        Suite: TLS_DHE_RSA_WITH_AES_128_GCM_SHA256         
+        Suite: TLS_RSA_WITH_AES_128_GCM_SHA256         
+        Suite: TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA         
+        Suite: TLS_DHE_RSA_WITH_AES_128_CBC_SHA         
+        Suite: TLS_RSA_WITH_AES_128_CBC_SHA         
+        Suite: TLS_RSA_WITH_3DES_EDE_CBC_SHA         
+        Suite: TLS_RSA_WITH_RC4_128_SHA     
+    Compression methods         
         Method: null     
-        Extensions         
-            Extension: server_name             
-                Hostname: www.feistyduck.com         
-            Extension: renegotiation_info         
-            Extension: elliptic_curves             
-                Named curve: secp256r1             
-                Named curve: secp384r1         
-            Extension: signature_algorithms             
-                Algorithm: sha1/rsa             
-                Algorithm: sha256/rsa             
-                Algorithm: sha1/ecdsa             
-                Algorithm: sha256/ecdsa 
+    Extensions         
+        Extension: server_name             
+            Hostname: www.feistyduck.com         
+        Extension: renegotiation_info         
+        Extension: elliptic_curves             
+            Named curve: secp256r1             
+            Named curve: secp384r1         
+        Extension: signature_algorithms             
+            Algorithm: sha1/rsa             
+            Algorithm: sha256/rsa             
+            Algorithm: sha1/ecdsa             
+            Algorithm: sha256/ecdsa 
 ```
 
 字段描述：
 
 - Version：协议版本（protocol version）指示客户端支持的佳协议版本。
 - Random：随机数（random）字段包含32字节的数据（只有28字节是随机生成的；剩余的4字 节包含额外的信息，受客户端时钟的影响）。在握手时，`客户端和服务器都会提供随机数`。这种随机性对每次握手都是独一无二的，在身份验证中起着举足轻重的作用。它可以防止重放攻击，并确认初始数据交换的完整性。同时随机数也是生成后续摘要密钥和加密密钥的重要参数。 
-- Session ID ：在第一次连接时，会话ID（session ID）字段是空的，这表示客户端并不希望恢复某个已 存在的会话。在后续的连接中，这个字段可以保存会话的唯一标识。服务器可以借助会 话ID在自己的缓存中找到对应的会话状态。
+- Session ID ：在第一次连接时，会话ID（session ID）字段是空的，这表示客户端并不希望恢复某个已存在的会话。在后续的连接中，这个字段可以保存会话的唯一标识。服务器可以借助会话ID在自己的缓存中找到对应的会话状态。
 - Cipher Suites ：密码套件（cipher suite）块是由客户端支持的所有密码套件组成的列表，该列表是按优先 级顺序排列的。
 - Compression ：客户端可以提交一个或多个支持压缩的方法。默认的压缩方法是null，代表没有压缩。 
 - Extensions 扩展（extension）块由任意数量的扩展组成。这些扩展会携带额外数据。
 
 #### (2) ServerHello 
 
-ServerHello 消息的意义是将服务器选择的连接参数传送回客户端。这个消息的结构与 ClientHello 类似，只是每个字段只包含一个选项。服务器无需支持客户端支持的佳版本。如果服务器不支持与客户端相同的版本，可以提供 某个其他版本以期待客户端能够接受。 
+ServerHello 消息的意义是将服务器选择的连接参数传送回客户端。这个消息的结构与 ClientHello 类似，只是每个字段只包含一个选项（即选中的可选参数）。服务器无需支持客户端支持的佳版本。如果服务器不支持与客户端相同的版本，可以提供 某个其他版本以期待客户端能够接受。 
 
 ```
 Handshake protocol: ServerHello     
@@ -132,7 +132,7 @@ Handshake protocol: ServerHello
 
 #### (3) Certificate 
 
-典型的Certificate消息用于携带服务器 `X.509` 证书链。证书链是以 ASN.1 DER 编码的一系列 证书，一个接着一个组合而成。主证书必须第一个发送，中间证书按照正确的顺序跟在主证书之后。服务器必须保证它发送的证书与选择的算法套件一致。
+典型的Certificate消息用于携带服务器 `X.509` 证书链。证书链是以 ASN.1 DER 编码的一系列证书，一个接着一个组合而成。主证书必须第一个发送，中间证书按照正确的顺序跟在主证书之后。服务器必须保证它发送的证书与选择的算法套件一致。
 
 >Certificate 消息是可选的，因为并非所有套件都使用身份验证，也并非所有身份验证方法都需要证书。更进一步说，虽然消息默认使用 X.509 证书，但是也可以携带其他形式的标志；一些套件就依赖PGP密钥。 
 
@@ -174,11 +174,12 @@ Finished 消息意味着握手已经完成。消息内容将加密，以便双�
 
 密钥交换是握手过程中最引人入胜的地方，在 TLS 中，会话安全性取决于称为 **主密钥（master secret）** 的 48 字节共享密钥。密钥交换的目的就是计算另一个值，即预主密钥（premaster secret）。这个值是组成主密钥的来源。
 
-密钥交换算法：
+TLS支持许多密钥交换算法，能够支持各种证书类型、公钥算法和密钥生成协议。使用哪一种密钥交换由协商的套件所决定。一旦套件决定下来，两端都能了解按照哪种算法继续操作。实际使用的密钥交换算法主要有以下4种。
 
-- RSA 密钥交换
-- Diffie-Hellman 密钥交换
-- 椭圆曲线 Diffie-Hellman 密钥交换
+- RSA：RSA 是一种事实上的标准密钥交换算法，它得到了广泛的支持。但它受到一个问题的严重威胁：它的设计使被动攻击者可以解码所有加密数据，只要她能够访问服务器的私钥。因此，RSA密钥交换正慢慢被其他支持前向保密（forward  secrecy）的算法所替代。RSA密钥交换是一种密钥传输（key  transport）算法，这种算法由客户端生成预主密钥，并以服务器公钥加密传送给服务器。
+- DHE_RSA：临时Diffie-Hellman（ephemeral Diffie-Hellman，DHE）密钥交换是一种构造完备的算法。它的优点是支持前向保密，缺点是执行缓慢。DHE是一种密钥协定算法，进行协商的团体都对密钥生成产生作用，并对公共密钥达成一致。在TLS中，DHE通常与RSA身份验证联合使用。
+- ECDHE_RSA 和 ECDHE_ECDSA：临时椭圆曲线Diffie-Hellman（ephemeral elliptic curve Diffie-Hellman，ECDHE）密钥交换建立在椭圆曲线加密的基础之上。椭圆曲线算法是相对较新的算法。大家认可它执行很快而且提供了前向保密。但是只有较新的客户端才能较好地支持。ECDHE也是一种密钥协定算法，其理论原理与DHE类似。在TLS中，ECDHE可以与RSA或者ECDSA身份验证一起使用。
+
 
 >原书关于密钥交换算法有非常完整的描述，如果需要进一步了解可以参阅原书。
 
@@ -189,11 +190,7 @@ Finished 消息意味着握手已经完成。消息内容将加密，以便双�
 
 一旦证书验证通过，客户端就知道使用的公钥，在此之后，客户端将公钥交给指定的密钥交换算法，并由它负责以某种方式使用公钥验证另一端。
 
-在 RSA 密钥交换过程中：
-
-- 客户端生成一个随机值作为预主密钥，并服务器公钥加密后发送出去。
-- 用于对于私钥的服务器解密消息得到预主密钥。
-- 身份验证的原理就是：只有用于对于私钥的服务器才能取得预主密钥，构造出正确的会话密钥，并生成正确的 Finished 消息。
+在 RSA 密钥交换过程中：客户端生成一个随机值作为预主密钥，并服务器公钥加密后发送出去。用于对于私钥的服务器解密消息得到预主密钥。身份验证的原理就是：**只有用于对于私钥的服务器才能取得预主密钥，构造出正确的会话密钥，并生成正确的 Finished 消息**。
 
 ---
 ## 5 加密
@@ -312,3 +309,8 @@ struct {
     - 允许密码套件定义其自身的PRF。 
     - 使用单一散列代替用于数字签名的MD5/SHA1组合。默认使用SHA256，并且密码套件可 以指定其自身使用的散列。签名散列算法以往是由协议强制指定，现在是散列函数式签 名结构中的一部分，而且在实施启用中可以选择佳算法。 
     -  密码套件可以显式指定Finished消息中的verify_data成员的长度。 
+
+---
+## 推荐阅读
+
+通过阅读 [Wireshark 抓包理解 HTTPS 请求流程](https://www.jianshu.com/p/cf8c2f2cd18a) 可以加深 TLS 握手过程的理解。
