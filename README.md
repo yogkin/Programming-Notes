@@ -69,9 +69,13 @@
 
 ### View
 
+学习资料：
+
+- [自定义 View 学习资料](Android/UI/References.md)
+
 自定义 View：
 
-- [自定义View基础.md](Android/UI/CustomViews/自定义View基础.md)
+- [自定义 View基础.md](Android/UI/CustomViews/自定义View基础.md)
 - [总结-View常用方法.md](Android/UI/CustomViews/总结-View常用方法.md)
 - [总结-View计算技巧.md](Android/UI/CustomViews/总结-View计算技巧.md)
 - [Android系统焦点.md](Android/UI/CustomViews/Android系统焦点.md)
